@@ -1,4 +1,4 @@
-Citation
+# Citation
 
 This module provides a page and a basic token system to setup a 'How to cite this document' block for Items, Files and Collections.
 
