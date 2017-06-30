@@ -4,7 +4,7 @@ This module provides a page and a basic token system to setup a 'How to cite thi
 
 This block can then be output in your theme by calling :
 
-EmanCitationPlugin::citationTokens(metadata('recordType', 'recordId), <type>).
+EmanCitationPlugin::citationTokens(metadata('recordType', 'recordId), [type]).
 
-<type> begin one of "item", "collection" or "file".
+[type] being one of "item", "collection" or "file".
 
