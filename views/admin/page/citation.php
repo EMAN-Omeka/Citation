@@ -13,11 +13,8 @@ Jetons disponibles (certains jetons ne sont pas disponibles sur les fichiers et 
 <ul>
 <li>Titre <b>{titre}</b></li>
 <li>Auteur <b>{createur}</b></li>
-<li>Titre <b>{editeur}</b></li>
+<li>Editeur <b>{editeur}</b></li>
 <li>Date <b>{date}</b></li>
-<li>Sous Titre <b>{soustitre}</b></li>
-<li>Auteur Description <b>{auteurdesc}</b></li>
-<li>Auteur Transcription <b>{auteurtrans}</b></li>
 <li>Adresse du document <b>{url}</b></li>
 </ul>
 </em>

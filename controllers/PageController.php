@@ -9,7 +9,7 @@ class EmanCitation_PageController extends Omeka_Controller_AbstractActionControl
 		
 		$title = new Zend_Form_Element_Note('citation_items_title');
 		$title->setValue("<h4>Items : Texte de la citation</h4>");
-		$title->setBelongsTo($id);
+// 		$title->setBelongsTo($id);
 		$form->addElement($title);		
 		$citation = new Zend_Form_Element_Textarea('citation_items');
 		$citation->setLabel('Items : Texte de la citation');
@@ -19,7 +19,7 @@ class EmanCitation_PageController extends Omeka_Controller_AbstractActionControl
 		
 		$title = new Zend_Form_Element_Note('citation_files_title');
 		$title->setValue("<h4>Fichiers : Texte de la citation</h4>");
-		$title->setBelongsTo($id);
+// 		$title->setBelongsTo($id);
 		$form->addElement($title);		
 		$citation = new Zend_Form_Element_Textarea('citation_files');
 		$citation->setLabel('Fichiers : Texte de la citation');
@@ -29,7 +29,7 @@ class EmanCitation_PageController extends Omeka_Controller_AbstractActionControl
 		
 		$title = new Zend_Form_Element_Note('citation_collections_title');
 		$title->setValue("<h4>Collections : Texte de la citation</h4>");
-		$title->setBelongsTo($id);
+// 		$title->setBelongsTo($id);
 		$form->addElement($title);		
 		$citation = new Zend_Form_Element_Textarea('citation_collections');
 		$citation->setLabel('Collections : Texte de la citation');

@@ -67,24 +67,6 @@ class EmanCitationPlugin extends Omeka_Plugin_AbstractPlugin
   		case 'item' :
   			$citation = get_option('eman_citation');  			
   			$content = get_record_by_id('Item', $contentId);
-  			if (element_exists('Item Type Metadata', 'Sous-titre')) {
-  				$soustitre = strip_tags(metadata($content, array('Item Type Metadata', 'Sous-titre')));
-  				$soustitre = $soustitre ? "&laquo; $soustitre &raquo;," : '';
-  			} else {
-  				$soustitre = ' Soustitre de la muerte';
-  			}
-  			if (element_exists('Item Type Metadata', 'Auteur description')) {
-  				$auteurdesc = strip_tags(metadata($content, array('Item Type Metadata', 'Auteur description')));
-  				$auteurdesc = $auteurdesc ? "&Eacute;dition de la fiche : $auteurdesc.<br /> " : '';
-  			} else {
-  				$auteurdesc = ' Description de la muerte';
-  			}
-  			if (element_exists('Item Type Metadata', 'Auteur transcription')) {
-  				$auteurtrans = strip_tags(metadata($content, array('Item Type Metadata', 'Auteur transcription')));
-  				$auteurtrans = $auteurtrans ? "Transcription du document : $auteurtrans.<br />" : '';
-  			} else {
-  				$auteurtrans = ' Transcription de la muerte';
-  			}  			
   			$url = '/items/show/';
   			break;
   		case 'collection' :
@@ -121,9 +103,6 @@ class EmanCitationPlugin extends Omeka_Plugin_AbstractPlugin
   			strip_tags(metadata($content, array('Dublin Core', 'Creator'))),
   			$editeur,
   			strip_tags(metadata($content, array('Dublin Core', 'Date'))),
-  			$soustitre,
-  			$auteurdesc,
-  			$auteurtrans,
   			WEB_ROOT . $url . $contentId,
   			date('d/m/Y'),
   	);  	 
